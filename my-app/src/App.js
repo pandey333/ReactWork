@@ -1,9 +1,17 @@
 import React from "react";
 
-import "./App.css";
-import Table from "./functional/table.jsx";
+import Counter2 from "./functional/counterComponent";
+ import "./App.css";
+// import Table from "./functional/table.jsx";
+// function App() {
+//   return <Table />;
+// }
 function App() {
-  return <Table />;
+  return (
+    <div className="App">
+      <Counter2/>
+    </div>
+  );
 }
 
 export default App;
