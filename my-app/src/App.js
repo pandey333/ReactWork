@@ -1,16 +1,20 @@
 import React from "react";
 
-import Counter2 from "./functional/counterComponent";
+import Counter from "./functional/counterComponent";
+import {Form} from "./classes/form.jsx"
  import "./App.css";
-// import Table from "./functional/table.jsx";
+ import Table from "./functional/table.jsx";
 // function App() {
 //   return <Table />;
 // }
 function App() {
   return (
-    <div className="App">
-      <Counter2/>
-    </div>
+  <>
+    
+      <Form/>
+      <Counter/>
+      <Table/>
+   </>
   );
 }
 

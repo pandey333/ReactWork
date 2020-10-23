@@ -14,7 +14,7 @@ function Counter() {
     setCount(prevCount => prevCount - 1);
   };
   return (
-    <div>
+    <div className="rajat">
       <div>
         <button onClick={handleDecrement}>-</button>
         <h5>Count is {count}</h5>
