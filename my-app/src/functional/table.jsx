@@ -35,9 +35,14 @@ const user = [
 ];
 function Table() {
   return (
-    <table>
+    
+   
+
+    <table className="rajat">
+    
       <Tablehead header={header} />
       <Tablebody user={user} />
+     
     </table>
   );
 }
