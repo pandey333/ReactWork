@@ -6,7 +6,8 @@ const Stopwatch = () => {
   const countRef = useRef(null);
 
   const handleStart = () => {
-    if(!isActive) {
+    if(!isActive) 
+    {
       setIsActive(true);
       countRef.current = setInterval(() => {
         setTimer((timer) => timer + 1);

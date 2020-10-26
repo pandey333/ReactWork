@@ -32,8 +32,8 @@ class Counter2 extends React.Component {
       return (
   
      <div className="rajat">
-     <button className='inc' onClick={(e) => this.increment()}>+</button>
-      <button className='dec' onClick={(e) => this.decrement(e)}>-</button>
+     <button className='inc' onClick={() => this.increment()}>+</button>
+      <button className='dec' onClick={() => this.decrement()}>-</button>
       <button className='reset' onClick={() => this.reset()}>Reset</button>
       <h1>Current Count: {this.state.count}</h1>
     </div>
