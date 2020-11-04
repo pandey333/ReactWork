@@ -11,6 +11,6 @@ function Bodyrow(props) {
     </tr>
   ));
 
-  return <>{users_rows}</>;
+  return <> {users_rows}</>
 }
 export default Bodyrow;
