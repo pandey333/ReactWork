@@ -3,7 +3,9 @@ import React from "react";
  import Counter from "./functional/counterComponent";
  import  Stopwatch from "./classes/StopWatch";
 
- import Todo from "./classes/todoList";
+ //import Todo from "./classes/todoList";
+
+ import Todo from "./functional/todoList";
 
 import {Form} from "./classes/form.jsx"
  import "./App.css";
