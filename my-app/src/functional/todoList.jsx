@@ -1,43 +1,41 @@
 import React, { useState } from "react";
 function Todo() {
-  const [inputList, setInputList] = useState("");
-  const [items, setItems] = useState([]);
-
+  
+  const [itemList, setItemList] = useState([]);
+  const [item, setItem] = useState("");
+  
   const itemEvent = (e) => {
-    setInputList(e.target.value);
+    setItem(e.target.value);
   };
 
   const listOfItems = () => {
-    setItems([...items, inputList]);
-    setInputList("");
+    setItemList([...itemList, item]);
+    setItem("");
   };
 
   const deleteItem = (i) => {
-      debugger;
-        items.splice(i, 1);
-        setItems([...items]);
+      
+        itemList.splice(i, 1);
+        setItemList([...itemList]);
   }
-
-  
-  
 
 
   return (
     <div>
       <input type="text" 
       placeholder="add todos"
-     value={inputList}
+     value={item}
      onChange={itemEvent}
       />
       <button onClick={listOfItems}>+</button> 
 
       <ol>
-         {items.map((e,i)=>{
+         {itemList.map((e,i)=>{
             return (
             <li>{e}
             <button
                 onClick={() => deleteItem(i)}
-            >Delete</button>
+            > <br/>X</button>
             </li>
             )
         })}  

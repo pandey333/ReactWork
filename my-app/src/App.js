@@ -1,7 +1,7 @@
 import React from "react";
 
- import Counter from "./functional/counterComponent";
- import  Stopwatch from "./classes/StopWatch";
+ import Counter from "./classes/counterComponent";
+ import  Stopwatch from "./functional/StopWatch";
 
  //import Todo from "./classes/todoList";
 
